@@ -10,8 +10,7 @@ $$P(ABC) = P(A|BC)\times P(B|C) \times P(C)$$
  This decomposition allows us to break down complex chains of observations into manageable conditional probabilities.
 ### parameterization
 The idea is to parameterize these conditional probabilities and further estimate the conditional probabilities that maximize the likelihood of observing our dataset $\mathbf{\Omega}$. We do so by letting 
-$$
-\theta_{ijk} =
+$$\theta_{ijk} =
 P(X_i = j \ | \ pa(X_i) = k)
 $$
 Meaning $\theta_{ijk}$ is the likelihood of observing a current event $ij$ conditioned on the events $k$.
