@@ -22,4 +22,12 @@ $$L(\Theta; ABC) = \theta_{A}\times \theta_{B} \times \theta_{C}$$
 
 ### Maximum Likelihood Estimation (MLE)
 We've defined our goal as to find a parameter set $\Theta$ which maximizes the likelihood for our data 
+
 $$L(\Theta ; \mathbf{\Omega}) = \prod_{n} P(\mathbf{\Omega}_n \ | \ \Theta)$$
+
+Where $\Theta = \{\theta_{ijk}\}, \ \forall \  i,j,k \in \mathbf{\Omega}$ and $\mathbf{\Omega}_n$ is the nth sample.
+We can then further simplify computations by taking the log of the likelihood followed by a sum.
+
+$$\hat{\Theta} = \argmax_{\theta_{ijk}} \sum_{ijk}m_{ijk} \log \theta_{ijk}$$
+
+Where $m_{ijk}$ is a function that simply returns the number of occurrences for an observation $i, j, k$ given our dataset $\mathbf{\Omega}$. <br>Maximizing this objective function yields $\hat{\Theta}$, which is the set of conditional probabilities that maximizes the likelihood of observing the configurations of events within our dataset. 
