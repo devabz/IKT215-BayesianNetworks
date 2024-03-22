@@ -17,7 +17,9 @@ Meaning $\theta_{ijk}$ is the likelihood of observing a current event $ij$ condi
 Where $X_i$ is a random variable in state $j$, and its parents $pa(X_i)$ has the configuration $k$
 <br>Then conceptually, the likelihood of an observation is given by its parameterized product.
 $$L(\Theta; ABC) = \theta_{A}\times \theta_{B} \times \theta_{C}$$
-![output.png](output.png)
+
+![output.png](./output.png)
+
 ### Maximum Likelihood Estimation (MLE)
 We've defined our goal as to find a parameter set $\Theta$ which maximizes the likelihood for our data 
 $$L(\Theta ; \mathbf{\Omega}) = \prod_{n} P(\mathbf{\Omega}_n \ | \ \Theta)$$
